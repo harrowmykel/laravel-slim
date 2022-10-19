@@ -13,7 +13,7 @@ class Router
         "index" => "client/index.php",
         // web_api/index
         "web_api_index" => "api/index.php",
-        "404" => "404.php"
+        "404" => "client/404.php"
     ];
 
     /**
