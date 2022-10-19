@@ -185,4 +185,9 @@ class Router
     {
         return (explode('?', self::currentUrl()))[0];
     }
+
+    public static function redirect($path)
+    {
+        header("Location: " . $path);
+    }
 }
