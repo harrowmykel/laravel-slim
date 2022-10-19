@@ -14,7 +14,7 @@ defined('APP_READY') || die();
 </head>
 <body>
     <?php
-        helloWorld();
+        helloWorld_tpl();
     ?>
 </body>
 </html>
