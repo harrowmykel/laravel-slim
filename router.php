@@ -12,7 +12,8 @@ class Router
         //pages
         "index" => "client/index.php",
         // web_api/index
-        "web_api_index" => "api/index.php"
+        "web_api_index" => "api/index.php",
+        "404" => "client/404.php"
     ];
 
     /**
@@ -89,7 +90,7 @@ class Router
 
         //for app apis, use json
         if ($path == "404" && $path_0 == 'app-api') {
-            release([
+            echo json_encode([
                 "error" => 404,
                 "error_text" => "no such file"
             ]);
