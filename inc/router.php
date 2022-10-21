@@ -182,7 +182,7 @@ class Router
     }
 
     /**
-     * returns example.php from /example.php?er=3#ee
+     * returns example.org/example.php from example.org/example.php?er=3#ee
      */
     public static function currentUrlWithoutGetParams()
     {
