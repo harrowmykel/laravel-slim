@@ -42,11 +42,11 @@ class Files
         // function if you have a modern version of PHP.
         if ($latestFirst) {
             usort($files, function ($file1, $file2) {
-                return $file1['filedatetime'] - $file2['filedatetime'];
+                return $file2['filedatetime'] - $file1['filedatetime'];
             });
         } else {
             usort($files, function ($file1, $file2) {
-                return $file2['filedatetime'] - $file1['filedatetime'];
+                return $file1['filedatetime'] - $file2['filedatetime'];
             });
         }
 
