@@ -181,13 +181,21 @@ class Router
         return $url;
     }
 
+    /**
+     * returns example.php from /example.php?er=3#ee
+     */
     public static function currentUrlWithoutGetParams()
     {
-        return (explode('?', self::currentUrl()))[0];
+        $url = (explode('?', self::currentUrl()))[0];
+        return (explode('#', $url))[0];
     }
 
+    /**
+     * redirects a user
+     */
     public static function redirect($path)
     {
         header("Location: " . $path);
+        exit();
     }
 }

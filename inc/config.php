@@ -6,7 +6,8 @@ defined('APP_READY') || die();
 
 
 
-class Config{
+class Config
+{
 
     //instance fof the Config class
     protected static $instance;
@@ -24,7 +25,8 @@ class Config{
     //define constants here
     public function init()
     {
-    	//this should be the link to your website 
-    	define('ENVIRONMENT_URL', 'https://example.com');
+        //this should be the link to your website 
+        define('ENVIRONMENT_URL', 'https://example.com');
+        define('APP_LOGS_PATH', ROOT_DIR . "/logs");
     }
 }
