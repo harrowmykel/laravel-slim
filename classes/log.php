@@ -29,7 +29,7 @@ class Log
         }
 
         // disable direct access
-        if (file_exists(APP_LOGS_PATH . '/.htaccess')) {
+        if (!file_exists(APP_LOGS_PATH . '/.htaccess')) {
             $f = fopen(APP_LOGS_PATH . '/.htaccess', 'a+');
             fwrite($f, 'deny from all');
             fclose($f);
