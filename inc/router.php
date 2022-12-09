@@ -47,8 +47,8 @@ class Router
 
         $path = self::getUrlParamInPosition(0, "index");
         $path_0 = self::getUrlParamInPosition(0, "index");
-        $path_1 = self::getUrlParamInPosition(1, "index");
-        $path_2 = self::getUrlParamInPosition(2, "index");
+        $path_1 = self::getUrlParamInPosition(1, null);
+        $path_2 = self::getUrlParamInPosition(2, null);
         $view_path = "";
 
         //find the route to show
