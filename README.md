@@ -18,3 +18,5 @@ Router::currentUrl(); //returns example.com
 Router::currentUrl(["a"=>"b"]); //returns example.com?a=b
 
 ```
+
+root folder is `/public/` folder. configure your apache .conf accordingly
